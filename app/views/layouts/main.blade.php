@@ -9,16 +9,16 @@
 	</head>
 
 	<body>
-		<div class="navbar navbar-fixed-top">
-			<div class="navbar-inner">
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
 				<div class="container">
-					<ul class="nav">
-						<li>{{ HTML::link('users/register', 'Register') }}</li>
+					<ul class="nav navbar-nav">
+						<li class="active">{{ HTML::link('users/register', 'Register') }}</li>
 						<li>{{ HTML::link('users/login', 'Login') }}</li>
 					</ul>
 				</div>
 			</div>
-		</div>
+		</nav>
 		<div class="container">
 			@if(Session::has('message'))
 				<p class="alert">{{ Session::get('message') }}</p>
