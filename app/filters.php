@@ -13,7 +13,7 @@
 
 App::before(function($request)
 {
-	if(Route::currentRouteName() == '/') return Redirect::to('users/login');
+	//
 });
 
 
