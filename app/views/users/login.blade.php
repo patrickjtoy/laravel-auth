@@ -8,5 +8,5 @@
 		{{ Form::password('password', array('class' => 'form-control', 'placeholder' => 'Password')) }}
 	</div>
 
-	{{ Form::submit('Login', array('class' => 'tn btn-large btn-primary btn-block')) }}
+	{{ Form::submit('Login', array('class' => 'btn btn-large btn-primary btn-block')) }}
 {{ Form::close() }}
